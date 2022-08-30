@@ -4,70 +4,134 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Fylo landing page with two column layout</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/logo.svg">
+  <link rel="stylesheet" href="/style.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Fylo | Home</title>
+
+
 </head>
 <body>
 
-  Features
-  Team
-  Sign In
+  <header>
+    <img src="/images/logo.svg" alt="logo" class="logo">
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__list--item"><a href="#" class="nav-link">Features</a></li>
+        <li class="nav__list--item"><a href="#" class="nav-link">Team</a></li>
+        <li class="nav__list--item"><a href="#" class="nav-link">Sign In</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  All your files in one secure location, accessible anywhere.
+  <main>
 
-  Fylo stores your most important files in one secure location. 
-  Access them wherever you need, share and collaborate with friends, 
-  family, and co-workers.
+    <div class="bloc bloc_1">
+      <h1 class="title">All your files in one secure location, accessible anywhere.</h1>
+      <p class="text bloc__text">
+        Fylo stores your most important files in one secure location.
+        Access them wherever you need, share and collaborate with friends,
+        family, and co-workers.
+      </p>
 
-  Get Started
+      <input type="email" placeholder="Enter your email..." required id="email">
+      <label for="email" ><button class="btn-email" role="link">Get Started</button></label>
+      <img src="/images/illustration-1.svg" alt="All your files in one secure location, accessible anywhere." class="picture bloc_1--picture">
 
-  Stay productive, wherever you are
 
-  Never let location be an issue when accessing your files. Fylo has you 
-  covered for all of your file storage needs.
+    </div>
+    <div class="bloc bloc_2">
+      <h1 class="title">Stay productive, wherever you are</h1>
+      <div class="bloc__text">
+        <p class="text">
+          Never let location be an issue when accessing your files. Fylo has you
+          covered for all of your file storage needs.
+        </p>
+        <p class="text">
+          Securely share files and folders with friends, family and colleagues for
+          live collaboration. No email attachments required!
+        </p>
+      </div>
+      <a href="" class="see-how-it-work__link"><span class="see-how-it-work__link--text">See how Fylo works</span> <img src="/images/icon-arrow.svg" alt="" class="arrow-icon"> </a>
 
-  Securely share files and folders with friends, family and colleagues for 
-  live collaboration. No email attachments required!
+      <section class="testimonial_container">
+        <img src="/images/icon-quotes.svg" alt="" class="quotes-icon">
+        <p class="testimonial--quotation">
+          Fylo has improved our team productivity by an order of magnitude. Since
+          making the switch our team has become a well-oiled collaboration machine
+        </p>.
+        <div class="testimonial--person">
+          <img src="/images/avatar-testimonial.jpg" alt="" class="testimonial--picture">
+          <h6 class="testimonial--name">Kyle Burton</h6>
+          <p class="testimonial--job">Founder & CEO, Huddle</p>
+        </div>
+      </section>
 
-  See how Fylo works
+      <img src="/images/illustration-2.svg" alt="Stay productive, wherever you are" class="picture bloc_2--picture">
+    </div>
 
-  Fylo has improved our team productivity by an order of magnitude. Since 
-  making the switch our team has become a well-oiled collaboration machine.
 
-  Kyle Burton
-  Founder & CEO, Huddle
-
-  Get early access today
-
-  It only takes a minute to sign up and our free starter tier is extremely generous. 
-  If you have any questions, our support team would be happy to help you.
-
-  Get Started For Free
-
-  Phone: +1-543-123-4567
-  example@fylo.com
-
-  About Us
-  Jobs
-  Press
-  Blog
-
-  Contact Us
-  Terms
-  Privacy
+    <div class="get-access">
+      <div class="get-acces__text">
+        <h1 class="title">Get early access today</h1>
+        <p class="text">
+          It only takes a minute to sign up and our free starter tier is extremely generous.
+          If you have any questions, our support team would be happy to help you.
+        </p>
+      </div>
+      <div class="get-access__input">
+        <input type="email" placeholder="Enter your email..." required id="email">
+        <label for="email"><button class="btn-email" role="link">Get Started For Free</button></label>
+      </div>
+    </div>
+  </main>
 
   <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
+    <img src="/images/logo.svg" alt="logo" class="logo">
+
+    <div class="footer__links--container">
+
+      <ul class="footer__list footer__list--first">
+        <li class="phone">
+          <span><img src="/images/icon-phone.svg" alt="" class="phone-icon"></span>
+          <span class="phone-text">Phone: <a href="tel:+15431234567" class="fylo-phone">+1-543-123-4567</a></span>
+        </li>
+        <li class="email">
+          <span><img src="/images/icon-email.svg" alt="" class="email-icon"></span>
+          <span class="email-text"><a href="mailto:example@fylo.com" class="fylo-email">example@fylo.com</a></span>
+        </li>
+      </ul>
+
+
+      <ul class="footer__list footer__list--second">
+        <li class="footer__list--item">
+          <a href="#" class="footer__list--item_link">About Us</a>
+        </li>
+        <li class="footer__list--item">
+          <a href="#" class="footer__list--item_link">Jobs</a>
+        </li>
+        <li class="footer__list--item">
+          <a href="#" class="footer__list--item_link">Press</a>
+        </li>
+        <li class="footer__list--item">
+          <a href="#" class="footer__list--item_link">Blog</a>
+        </li>
+      </ul>
+
+      
+      <ul class="footer__list footer__list--third">
+        <li class="footer__list--item">
+          <a href="#" class="footer__list--item_link">Contact Us</a>
+        </li>
+        <li class="footer__list--item">
+          <a href="#" class="footer__list--item_link">Terms</a>
+        </li>
+        <li class="footer__list--item">
+          <a href="#" class="footer__list--item_link">Privacy</a>
+        </li>
+      </ul>
+    </div>
   </footer>
+
 </body>
 </html>
