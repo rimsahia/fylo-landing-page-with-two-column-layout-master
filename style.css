@@ -197,11 +197,15 @@ header {
     width: 85%;
 }
 
+footer{
+    font-size: 1.4rem;
+}
 .footer--container{
     background-color: var(--clr-dark-blue);
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-block: 4rem;
 }
 .footer--content{
     margin: 0 auto;
