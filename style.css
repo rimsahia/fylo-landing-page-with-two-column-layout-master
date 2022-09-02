@@ -171,7 +171,7 @@ header {
     margin: auto 0;
 }
 .testimonial--picture{
-    border-radius: 15px;
+    border-radius: 50px;
 }
 
 .get-access__container{
@@ -240,7 +240,6 @@ footer .logo{
     width: 70%;
     display: flex;
     justify-content: space-around;
-    align-items: stretch;
 }
 .fb-icon,.twitter-icon,.ig-icon{
     width:50px;
@@ -250,4 +249,98 @@ footer .logo{
 .fb-icon:hover,.twitter-icon:hover,.ig-icon:hover{
     background-color: transparent;
 }
-/* social media icons */
+
+
+@media only screen and (min-width:630px) {
+    
+   .picture{
+        max-width: 40%;
+        align-self: center;
+    }
+
+    .bloc, .get-access,.footer__links--container{
+        display: flex;     
+        flex-direction: row-reverse;
+        gap: 5rem;
+    }
+    .bloc, .get-access, .footer--content{
+        width: 92%;
+        padding: 0;
+    }
+    .bloc--content, .bloc_2 .title, .get-access{
+        text-align: left;
+    }
+    form{
+        display: flex;
+        width: 90%;
+        gap: 10px;
+    }
+
+    .bloc_1 input{
+        width: 60%;
+    }
+    .bloc_1 button{
+        margin: 0;
+    }
+    .bloc_1 label{
+        width: 40%;
+    }
+
+    .bloc_2--container{
+        background-image: url(/images/bg-curve-desktop.svg);
+        margin-top: 10rem;
+    }
+    .bloc_2--content{
+        margin-top: -4rem;
+    }
+    .see-how-it-works{
+        margin: 0;
+    }
+    .testimonial_container{
+        width: 400px;
+        margin: 3.3rem 0;
+    }
+
+    .get-access{
+        flex-direction: row;
+        justify-content: space-between;
+        padding-block: 4rem;
+    }
+    .get-acces__text{
+        width: 45%;
+    }
+    .get-access__input{
+        width: 45%;
+    }
+    .get-access form{
+        flex-direction: column;
+        gap: 2px;
+    }
+    .get-access label{
+        width: 50%;
+        font-size: 0.9rem;
+    }
+    .get-access button{
+        font-size: 0.9rem;
+    }
+
+    footer{
+     font-size: 0.95rem;
+    }
+    .footer__links--container{
+        flex-direction: row;
+        gap: 5%;
+    }
+    .footer__list{
+        width: 25%;
+    }
+    .footer__list--social-media{
+        width: 10%;
+        justify-content: space-between;
+        margin-left: -6rem;
+    }
+    .fb-icon,.twitter-icon,.ig-icon{
+        width:30px;
+        border-radius: 10px;
+    }
+}
