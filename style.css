@@ -57,6 +57,7 @@ header {
   gap: 1.3rem;
   margin: auto;
   padding: 0;
+  line-height: 1.5em;
 }
 .nav__link {
   text-decoration: none;
