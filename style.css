@@ -54,8 +54,9 @@ header {
 
 .nav__list {
   display: flex;
-  gap: 1.5rem;
+  gap: 1.3rem;
   margin: auto;
+  padding: 0;
 }
 .nav__link {
   text-decoration: none;
@@ -198,11 +199,13 @@ header {
 
 .footer--container{
     background-color: var(--clr-dark-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .footer--content{
     margin: 0 auto;
-    width: min(85%, 470px);
-    padding: 3rem;
+    width: min(80%, 470px);
     color: var(--clr-text-white);
     display: flex;
     flex-direction: column;
@@ -213,7 +216,7 @@ footer a{
 }
 footer a:hover{
     color: var(--clr-link);
-    letter-spacing: 5px;
+    letter-spacing: 3px;
 }
 .footer__list{
     padding: 0;
@@ -224,6 +227,7 @@ footer .logo{
 }
 .footer__links--container{
     margin-block: 2.125rem;
+    width: 100%;
 }
 .footer__list--social-media{
     margin:auto;
