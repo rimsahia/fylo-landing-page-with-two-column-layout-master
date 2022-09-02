@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap");
+
+:root {
+  --clr-dark-blue: hsl(243, 87%, 12%);
+  --clr-bg-light-blue-and-text: hsl(238, 22%, 44%);
+  --clr-buttons: hsl(224, 93%, 58%);
+  --clr-link: hsl(170, 45%, 43%);
+  --clr-text-white: hsl(240, 75%, 98%);
+  --clr-text-gray: hsl(0, 0%, 75%);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+ul {
+  list-style: none;
+}
+
+.picture {
+  max-width: 100%;
+}
+
+.bloc__text{
+    color: var(--clr-bg-light-blue-and-text);
+}
+
+input,
+.call-to-action {
+  width: 100%;
+  height: 3rem;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+input{
+    padding: 1rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.4rem 2rem;
+  height: 5rem;
+}
+
+.nav__list {
+  display: flex;
+  gap: 1.5rem;
+  margin: auto;
+}
+.nav__link {
+  text-decoration: none;
+  color: var(--clr-dark-blue);
+}
+.nav__link:hover {
+  color: var(--clr-bg-light-blue);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.bloc .title {
+  color: var(--clr-dark-blue);
+}
+.bloc_1{
+ width: min(85%, 470px);
+ margin: 0 auto;
+}
+.bloc_1 {
+  text-align: center;
+}
+
+.call-to-action {
+  background-color: var(--clr-buttons);
+  color: var(--clr-text-white);
+  font-weight: 600;
+  border: none;
+  margin-top: 1rem;
+}
+.call-to-action:hover {
+  background-color: hsla(224, 93%, 58%, 0.745);
+  cursor: pointer;
+}
+.bloc_2--container{
+  background-image: url(/images/bg-curve-mobile.svg);
+  background-size: 500% 100%;
+  background-repeat: no-repeat;
+  background-position:center;
+  padding-top: 10rem;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bloc_2 {
+  width: min(85%, 470px);
+}
+.bloc_2--content{
+    margin-top: 7rem;
+}
+.bloc_2 .title{
+    font-size: 1.4rem;
+    text-align: center;
+}
+.bloc_2 .bloc__text{
+    margin-top: 2rem;
+}
+.see-how-it-works__container{
+    width: 100%;
+}
+.see-how-it-works{
+    text-decoration: none;
+    color: var(--clr-link);
+    font-size: 1.1rem;
+    padding-inline: 0;
+    margin: auto;
+    display: flex;
+    gap: 8px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--clr-link);
+}
+.see-how-it-works__text{
+    margin-block: 0.4em;
+}
+.arrow-icon{
+    align-self: center;
+}
+.see-how-it-works:hover{
+    opacity: 0.5;
+    cursor: pointer;
+    font-size: large;
+}
+
+.testimonial_container{
+    width: min(85%,400px);
+    margin:3.3rem auto;
+    padding: 1.3em 2em;
+    color: var(--clr-dark-blue);
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px var(--clr-text-gray);
+}
+.testimonial--quotation{
+    font-size: 1rem;
+    margin-block: .5em;
+}
+.testimonial--person{
+    display: flex;
+    height: 2.5rem;
+    gap: 5px;
+}
+.testimonial--name{
+    font-size:.8rem;
+    margin: 0;
+}
+.testimonial--job{
+    font-size:.6rem ;
+    margin: 0;
+}
+.testimonial--person_text{
+    margin: auto 0;
+}
+.testimonial--picture{
+    border-radius: 15px;
+}
+
+.get-access__container{
+    background-color: var(--clr-bg-light-blue-and-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.get-access{
+    padding: 4rem 3rem 5.5rem 3rem ;
+    text-align: center;
+    color: var(--clr-text-white);
+    width: min(95%,500px);
+}
+.get-access .title{
+    margin-top: 0;
+    font-size: 1.6rem;
+}
+.get-access input{
+    width: 85%;
+}
+.get-access .call-to-action{
+    width: 85%;
+}
+
+.footer--container{
+    background-color: var(--clr-dark-blue);
+}
+.footer--content{
+    margin: 0 auto;
+    width: min(85%, 470px);
+    padding: 3rem;
+    color: var(--clr-text-white);
+    display: flex;
+    flex-direction: column;
+}
+footer a{
+    text-decoration: none;
+    color: var(--clr-text-white);
+}
+footer a:hover{
+    color: var(--clr-link);
+    letter-spacing: 5px;
+}
+.footer__list{
+    padding: 0;
+    line-height: 2.5em;
+}
+footer .logo{
+    width: min(50%,200px);
+}
+.footer__links--container{
+    margin-block: 2.125rem;
+}
+.footer__list--social-media{
+    margin:auto;
+    margin-top: 4rem;
+    padding: 0;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+}
+.fb-icon,.twitter-icon,.ig-icon{
+    width:50px;
+}
