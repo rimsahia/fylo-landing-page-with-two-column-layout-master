@@ -237,3 +237,7 @@ footer .logo{
 .fb-icon,.twitter-icon,.ig-icon{
     width:50px;
 }
+.fb-icon:hover,.twitter-icon:hover,.ig-icon:hover{
+    background-color: aliceblue;
+    border-radius: 10px;
+}
