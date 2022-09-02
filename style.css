@@ -237,15 +237,17 @@ footer .logo{
     margin:auto;
     margin-top: 4rem;
     padding: 0;
-    width: 60%;
+    width: 70%;
     display: flex;
     justify-content: space-around;
     align-items: stretch;
 }
 .fb-icon,.twitter-icon,.ig-icon{
     width:50px;
-}
-.fb-icon:hover,.twitter-icon:hover,.ig-icon:hover{
     background-color: aliceblue;
     border-radius: 10px;
 }
+.fb-icon:hover,.twitter-icon:hover,.ig-icon:hover{
+    background-color: transparent;
+}
+/* social media icons */
